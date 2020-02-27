@@ -4,6 +4,7 @@ My pc config
 ## Usage
 
 ```
+cd ~
 git clone git@github.com:Shigerman/box-cfg.git
 # Add source "${HOME}/box-cfg/bash-cfg.sh" into ~/.bash_profile
 ```
