@@ -1,0 +1,14 @@
+[user]
+	name = "Larisa Shigareva"
+[alias]
+	st = status
+	ch = checkout
+	a = add
+	aa = add .
+	cm = commit -am
+	ps = push
+	pl = pull --all
+	lg = log --color --graph --abbrev-commit
+	br = branch
+	di = diff --ignore-space-change
+	dic = diff --ignore-space-change --cached
