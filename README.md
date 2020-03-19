@@ -7,6 +7,8 @@ My pc config
 cd ~
 git clone git@github.com:Shigerman/box-cfg.git
 # Add source "${HOME}/box-cfg/bash-cfg.sh" into ~/.bash_profile
+rm -f ~/.config/karabiner/karabiner.json
+ln ~/box-cfg/karabiner.json ~/.config/karabiner/karabiner.json
 ```
 
 ## License
