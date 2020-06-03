@@ -4,3 +4,4 @@ alias cdc='cd ${HOME}/box-cfg'
 alias g='git'
 alias ll='gls -l -h -A -F --color --group-directories-first $@'
 export PS1="\\W \\$ "
+export PYTHONDONTWRITEBYTECODE=1
