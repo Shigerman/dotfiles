@@ -5,3 +5,4 @@ alias g='git'
 alias ll='gls -l -h -A -F --color --group-directories-first $@'
 export PS1="\\W \\$ "
 export PYTHONDONTWRITEBYTECODE=1
+export PYTHONSTARTUP=~/box-cfg/pythonstartup.py
