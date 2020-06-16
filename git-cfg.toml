@@ -5,7 +5,7 @@
 	ch = checkout
 	a = add
 	aa = add .
-	cm = commit -am
+	cm = commit -m
 	ps = push
 	pl = pull --all
 	lg = log --color --graph --abbrev-commit
