@@ -3,6 +3,9 @@ alias cde='cd ${HOME}/Desktop'
 alias cdc='cd ${HOME}/box-cfg'
 alias g='git'
 alias ll='gls -l -h -A -F --color --group-directories-first $@'
+alias vec='python3 -m venv .venv'
+alias vea='. .venv/bin/activate'
+alias ved='deactivate'
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONSTARTUP=~/box-cfg/pythonstartup.py
 
