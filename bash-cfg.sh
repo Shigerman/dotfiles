@@ -18,7 +18,7 @@ set_bash_prompt() {
 
     if [ -e "$VIRTUAL_ENV" ]; then
         venv_name=$(basename "$VIRTUAL_ENV")
-        PS1="$PS1[\[\033[0;32m\]$venv_name\[\033[0m\]] "
+        PS1="$PS1\[\033[0;32m\]🐍\[\033[0m\] "
     fi
     PS1="$PS1\\$ "
 }
