@@ -25,7 +25,7 @@ explorer https://aka.ms/wsl2kernel
 explorer https://github.com/microsoft/wiinget-cli/releases
 # Reboot, install Ubuntu from App Store and run it
 scoop bucket add extras
-scoop install windows-terminal
+scoop install windows-terminal mpc-hc-fork
 ```
 
 ## License
