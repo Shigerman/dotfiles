@@ -2,7 +2,11 @@ alias cdd='cd ${HOME}/Documents'
 alias cde='cd ${HOME}/Desktop'
 alias cdc='cd ${HOME}/box-cfg'
 alias g='git'
-alias ll='gls -l -h -A -F --color --group-directories-first $@'
+if command -v gls &> /dev/null; then
+    alias ll='gls -l -h -A -F --color --group-directories-first $@'
+else
+    alias ll='ls -l -h -A -F --color --group-directories-first $@'
+fi
 alias vec='python3 -m venv .venv'
 alias vea='. .venv/bin/activate'
 alias ved='deactivate'
