@@ -17,14 +17,14 @@ set_bash_prompt() {
     PS1="\\W "
     branch_name=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
     if [ $? = "0" ]; then
-        PS1="$PS1(\[\033[0;33m\]$branch_name\[\033[0m\]) "
+        PS1="$PS1(\[\033[0;36m\]$branch_name\[\033[0m\]) "
     fi
 
     if [ -e "$VIRTUAL_ENV" ]; then
         venv_name=$(basename "$VIRTUAL_ENV")
         PS1="$PS1\[\033[0;32m\]🐍\[\033[0m\] "
     fi
-    PS1="$PS1\\$ "
+    PS1="$PS1\[\033[0;33m\]\\$\[\033[0m\] "
 }
 PROMPT_COMMAND=set_bash_prompt
 
