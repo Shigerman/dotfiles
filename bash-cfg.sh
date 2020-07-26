@@ -23,3 +23,9 @@ set_bash_prompt() {
     PS1="$PS1\\$ "
 }
 PROMPT_COMMAND=set_bash_prompt
+
+if [ -d "$HOME/.pyenv" ]; then
+    export PATH="$HOME/.pyenv/bin:$PATH"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi

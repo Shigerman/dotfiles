@@ -27,11 +27,19 @@ explorer https://github.com/microsoft/wiinget-cli/releases
 scoop bucket add extras
 scoop install windows-terminal mpc-hc-fork
 wsl
+sudo apt update
+sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 cd ~
 git config --global user.email "<mail>"
 git clone git@github.com:Shigerman/box-cfg.git
 echo '. "${HOME}/box-cfg/bash-cfg.sh"' >> ~/.bashrc
 echo -e "[include]\npath = ~/box-cfg/git-cfg.toml\n" >> ~/.gitconfig
+curl https://pyenv.run | bash
+. ~/.bashrc
+pyenv install 3.8.5
+pyenv global 3.8.5
 ```
 
 ## License
