@@ -11,6 +11,7 @@ alias vec='python3 -m venv .venv'
 alias vea='. .venv/bin/activate'
 alias ved='deactivate'
 export PYTHONDONTWRITEBYTECODE=1
+export PIPENV_VENV_IN_PROJECT=1
 export PYTHONSTARTUP=~/box-cfg/pythonstartup.py
 
 set_bash_prompt() {
