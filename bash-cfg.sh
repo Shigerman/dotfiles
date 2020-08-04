@@ -12,7 +12,10 @@ alias vea='. .venv/bin/activate'
 alias ved='deactivate'
 export PYTHONDONTWRITEBYTECODE=1
 export PIPENV_VENV_IN_PROJECT=1
+export POETRY_VIRTUALENVS_IN_PROJECT=1
 export PYTHONSTARTUP=~/box-cfg/pythonstartup.py
+# For commands like 'pipenv open flask'
+export EDITOR=code
 
 set_bash_prompt() {
     PS1="\\W "
