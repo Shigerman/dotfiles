@@ -7,15 +7,22 @@ if command -v gls &> /dev/null; then
 else
     alias ll='ls -l -h -A -F --color --group-directories-first $@'
 fi
-alias vec='python3 -m venv .venv'
+# Built-in 'venv' installs bundled, outdated 'pip'
+alias vec='python3 -m virtualenv .venv'
 alias vea='. .venv/bin/activate'
 alias ved='deactivate'
+alias por='poetry run'
+alias poi='poetry install'
+alias poa='poetry add'
+alias pom='poetry run python manage.py'
 export PYTHONDONTWRITEBYTECODE=1
 export PIPENV_VENV_IN_PROJECT=1
 export POETRY_VIRTUALENVS_IN_PROJECT=1
 export PYTHONSTARTUP=~/box-cfg/pythonstartup.py
 # For commands like 'pipenv open flask'
 export EDITOR=code
+# WSL2 display server address
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 
 set_bash_prompt() {
     PS1="\\W "
@@ -36,4 +43,9 @@ if [ -d "$HOME/.pyenv" ]; then
     export PATH="$HOME/.pyenv/bin:$PATH"
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
+fi
+
+if [ -d "$HOME/.nodenv" ]; then
+    export PATH="$HOME/.nodenv/bin:$PATH"
+    eval "$(nodenv init -)"
 fi
