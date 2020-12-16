@@ -11,12 +11,15 @@ fi
 alias vec='python3 -m virtualenv .venv'
 alias vea='. .venv/bin/activate'
 alias ved='deactivate'
-alias por='poetry run'
-alias pop='poetry run python'
+
+alias pon="poetry init --no-interaction"
 alias poi='poetry install'
 alias poa='poetry add'
+
+alias por='poetry run'
+alias pop='poetry run python'
 alias pom='poetry run python manage.py'
-alias pon="poetry init --no-interaction"
+
 export PYTHONDONTWRITEBYTECODE=1
 export PIPENV_VENV_IN_PROJECT=1
 export POETRY_VIRTUALENVS_IN_PROJECT=1
