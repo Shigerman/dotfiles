@@ -1,14 +1,18 @@
 [user]
 	name = "Larisa Shigareva"
+[pull]
+	rebase = true
 [alias]
-	st = status
-	ch = checkout
-	a = add
-	aa = add .
-	cm = commit -m
-	ps = push
-	pl = pull --all
-	lg = log --color --graph --abbrev-commit
-	br = branch
-	di = diff --ignore-space-change
-	dic = diff --ignore-space-change --cached
+	st = "status"
+	ch = "checkout"
+	a = "add"
+	aa = "add ."
+	cm = "commit -m"
+	ps = "push"
+	pl = "pull --all"
+	lg = "log --color --graph --abbrev-commit"
+	br = "branch"
+	di = "diff --ignore-space-change"
+	dic = "diff --ignore-space-change --cached"
+	diw = "diff --ignore-space-change --color-words"
+	dicw = "diff --ignore-space-change --color-words --cached"
