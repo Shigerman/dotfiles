@@ -1,15 +1,16 @@
-# box-cfg
+# dotfiles
 My pc config
 
 ## Usage
 
 ```
 cd ~
-git clone git@github.com:Shigerman/box-cfg.git
+git clone git@github.com:Shigerman/dotfiles.git
 rm -f ~/.config/karabiner/karabiner.json
-ln ~/box-cfg/karabiner.json ~/.config/karabiner/karabiner.json
-echo '. "${HOME}/box-cfg/bash-cfg.sh"' >> ~/.bash_profile
-echo -e "[include]\npath = ~/box-cfg/git-cfg.toml\n" >> ~/.gitconfig
+ln ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
+echo '. "${HOME}/dotfiles/bash-cfg.sh"' >> ~/.bash_profile
+printf '#!/bin/sh\n. ~/.bash_profile\n' > ~/.zshrc
+echo -e "[include]\npath = ~/dotfiles/git-cfg.toml\n" >> ~/.gitconfig
 ```
 
 ## Windows config
@@ -33,9 +34,9 @@ libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 cd ~
 git config --global user.email "<mail>"
-git clone git@github.com:Shigerman/box-cfg.git
-echo '. "${HOME}/box-cfg/bash-cfg.sh"' >> ~/.bashrc
-echo -e "[include]\npath = ~/box-cfg/git-cfg.toml\n" >> ~/.gitconfig
+git clone git@github.com:Shigerman/dotfiles.git
+echo '. "${HOME}/dotfiles/bash-cfg.sh"' >> ~/.bashrc
+echo -e "[include]\npath = ~/dotfiles/git-cfg.toml\n" >> ~/.gitconfig
 curl https://pyenv.run | bash
 . ~/.bashrc
 pyenv install 3.8.5
@@ -44,4 +45,4 @@ pyenv global 3.8.5
 
 ## License
 
-The following licensing applies to the box-cfg project: Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0). For more information go to https://creativecommons.org/licenses/by-nc-nd/4.0/
+The following licensing applies to the dotfiles project: Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0). For more information go to https://creativecommons.org/licenses/by-nc-nd/4.0/
