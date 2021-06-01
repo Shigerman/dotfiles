@@ -1,6 +1,6 @@
 alias cdd='cd ${HOME}/Documents'
 alias cde='cd ${HOME}/Desktop'
-alias cdc='cd ${HOME}/box-cfg'
+alias cdc='cd ${HOME}/dotfiles'
 alias g='git'
 if command -v gls &> /dev/null; then
     alias ll='gls -l -h -A -F --color --group-directories-first $@'
@@ -23,7 +23,7 @@ alias pom='poetry run python manage.py'
 export PYTHONDONTWRITEBYTECODE=1
 export PIPENV_VENV_IN_PROJECT=1
 export POETRY_VIRTUALENVS_IN_PROJECT=1
-export PYTHONSTARTUP=~/box-cfg/pythonstartup.py
+export PYTHONSTARTUP=~/dotfiles/pythonstartup.py
 # For commands like 'pipenv open flask'
 export EDITOR=code
 # WSL2 display server address
