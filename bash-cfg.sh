@@ -44,13 +44,15 @@ set_bash_prompt() {
 }
 PROMPT_COMMAND=set_bash_prompt
 
-if [ -d "$HOME/.pyenv" ]; then
-    export PATH="$HOME/.pyenv/bin:$PATH"
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
+##  Load pyenv, if installed
+if [ -d $HOME/.pyenv ]; then
+  export PATH="$HOME/.pyenv/bin:$PATH"
+  eval "$(pyenv init --path)"
+  eval "$(pyenv virtualenv-init -)"
 fi
 
-if [ -d "$HOME/.nodenv" ]; then
-    export PATH="$HOME/.nodenv/bin:$PATH"
-    eval "$(nodenv init -)"
+##  Load nodenv, if installed
+if [ -d $HOME/.nodenv ]; then
+  export PATH="$HOME/.nodenv/bin:$PATH"
+  eval "$(nodenv init -)"
 fi
