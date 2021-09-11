@@ -45,8 +45,10 @@ echo '. "${HOME}/dotfiles/bash-cfg.sh"' >> ~/.bashrc
 echo -e "[include]\npath = ~/dotfiles/git-cfg.toml\n" >> ~/.gitconfig
 curl https://pyenv.run | bash
 . ~/.bashrc
-pyenv install 3.8.5
-pyenv global 3.8.5
+pyenv install 3.9.7
+pyenv global 3.9.7
+pip install pipx
+pipx install poetry
 ```
 
 ## License
