@@ -7,16 +7,17 @@ My pc config
 cd ~
 git clone git@github.com:Shigerman/dotfiles.git
 rm -f ~/.config/karabiner/karabiner.json
+mkdir -p ~/.config/karabiner
 ln ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
 echo '. "${HOME}/dotfiles/bash-cfg.sh"' >> ~/.bash_profile
-printf '#!/bin/sh\n. ~/.bash_profile\n' > ~/.zshrc
+printf '#!/bin/sh\n. ~/.bash_profile\n' >> ~/.zshrc
 echo -e "[include]\npath = ~/dotfiles/git-cfg.toml\n" >> ~/.gitconfig
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
 git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
-pyenv install 3.9.5
-pyenv global 3.9.6
+pyenv install 3.10.1
+pyenv global 3.10.1
 ```
 
 ## Windows config
