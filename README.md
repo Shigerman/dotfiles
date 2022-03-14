@@ -1,5 +1,5 @@
 # dotfiles
-My pc config
+My PC config
 
 ## Usage
 
