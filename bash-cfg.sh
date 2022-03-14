@@ -40,7 +40,7 @@ set_bash_prompt() {
         venv_name=$(basename "$VIRTUAL_ENV")
         PS1="$PS1\[\033[0;32m\]🐍\[\033[0m\] "
     fi
-    PS1="$PS1\[\033[0;33m\]\\$\[\033[0m\] "
+    PS1="$PS1\[\033[0;33m\]#\[\033[0m\] "
 }
 PROMPT_COMMAND=set_bash_prompt
 
