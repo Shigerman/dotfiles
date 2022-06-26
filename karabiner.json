@@ -102,6 +102,18 @@
         },
 
         {
+          "description": "meta-period for 6th mouse button (scroll)",
+          "type": "basic",
+          "from": {
+            "key_code": "period"
+          },
+          "to": [{
+            "pointing_button": "button6"
+          }],
+          "conditions": [{"type": "variable_if", "name": "_m", "value": 1}]
+        },
+
+        {
           "description": "neta-shift-h for shift-left-arrow",
           "from": {
             "key_code": "h",
