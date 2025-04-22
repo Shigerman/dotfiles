@@ -1,7 +1,7 @@
 # dotfiles
 My PC config
 
-## Usage
+## macOS config
 
 ```
 cd ~
@@ -12,13 +12,7 @@ ln ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
 echo '. "${HOME}/dotfiles/bash-cfg.sh"' >> ~/.bash_profile
 printf '#!/bin/sh\n. ~/.bash_profile\n' >> ~/.zshrc
 echo -e "[include]\npath = ~/dotfiles/git-cfg.toml\n" >> ~/.gitconfig
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
-git clone https://github.com/nodenv/nodenv.git ~/.nodenv
-git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
 . ~/.zshrc
-pyenv install 3.10.1
-pyenv global 3.10.1
 ```
 
 ## Windows config
@@ -45,10 +39,5 @@ git config --global user.email "<mail>"
 git clone git@github.com:Shigerman/dotfiles.git
 echo '. "${HOME}/dotfiles/bash-cfg.sh"' >> ~/.bashrc
 echo -e "[include]\npath = ~/dotfiles/git-cfg.toml\n" >> ~/.gitconfig
-curl https://pyenv.run | bash
 . ~/.bashrc
-pyenv install 3.9.7
-pyenv global 3.9.7
-pip install pipx
-pipx install poetry
 ```
