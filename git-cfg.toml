@@ -1,5 +1,5 @@
 [user]
-    name = Larisa Petrova
-    email = larisapetrovaon@gmail.com
+    name = "Larisa Petrova"
+    email = "larisapetrovaon@gmail.com"
 [pull]
     rebase = false
