@@ -35,7 +35,6 @@ sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 cd ~
-git config --global user.email "<mail>"
 git clone git@github.com:Shigerman/dotfiles.git
 echo '. "${HOME}/dotfiles/bash-cfg.sh"' >> ~/.bashrc
 echo -e "[include]\npath = ~/dotfiles/git-cfg.toml\n" >> ~/.gitconfig
