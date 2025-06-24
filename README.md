@@ -6,12 +6,13 @@ My PC config
 ```
 cd ~
 git clone git@github.com:Shigerman/dotfiles.git
-rm -f ~/.config/karabiner/karabiner.json
-mkdir -p ~/.config/karabiner
-ln ~/dotfiles/karabiner.json ~/.config/karabiner/karabiner.json
+# keyboard mapping tool
+mkdir ~/.config
+ln -fs ~/dotfiles/karabiner ~/.config/karabiner
+# execute shell configuration in bash and zsh
 echo '. "${HOME}/dotfiles/bash-cfg.sh"' >> ~/.bash_profile
 printf '#!/bin/sh\n. ~/.bash_profile\n' >> ~/.zshrc
-echo -e "[include]\npath = ~/dotfiles/git-cfg.toml\n" >> ~/.gitconfig
+# apply shell configuration
 . ~/.zshrc
 ```
 
@@ -40,3 +41,6 @@ echo '. "${HOME}/dotfiles/bash-cfg.sh"' >> ~/.bashrc
 echo -e "[include]\npath = ~/dotfiles/git-cfg.toml\n" >> ~/.gitconfig
 . ~/.bashrc
 ```
+
+Additional configuration steps for setting up a new pc:
+* create manually ~/.gitconfig with content from git-cfg.toml
