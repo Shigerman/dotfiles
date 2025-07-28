@@ -3,3 +3,5 @@
     email = "larisapetrovaon@gmail.com"
 [pull]
     rebase = false
+[alias]
+    diw = "diff --word-diff=color"
