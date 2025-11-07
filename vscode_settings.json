@@ -1,0 +1,25 @@
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "grigoryvp memory theme",
+    "editor.fontSize": 14,
+    "editor.rulers": [
+        72,
+        79
+    ],
+    "javascript.preferences.organizeImports": {
+        "source.organizeImports": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "editor.formatOnSave": true,
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off"
+    }
+}
